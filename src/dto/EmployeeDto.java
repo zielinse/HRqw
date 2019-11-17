@@ -1,5 +1,7 @@
 package dto;
 
+import DTO.DepartmentDTO;
+
 import java.util.Date;
 
 public class EmployeeDto {
@@ -7,12 +9,15 @@ public class EmployeeDto {
     private String surname;
     private String occupation;
     private Date date;
+    private DTO.DepartmentDTO department;
 
-    public EmployeeDto(String name, String surname, String occupation, Date date){
+
+    public EmployeeDto(String name, String surname, String occupation, Date date, DTO.DepartmentDTO department) {
         this.name = name;
         this.surname = surname;
         this.occupation = occupation;
         this.date = date;
+        this.department = department;
     }
 
     public String getName() {
@@ -46,4 +51,14 @@ public class EmployeeDto {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public DepartmentDTO getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(DepartmentDTO department) {
+        this.department = department;
+    }
+
 }
+

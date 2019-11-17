@@ -9,10 +9,10 @@ public class EmployeeDto {
     private String surname;
     private String occupation;
     private Date date;
-    private DTO.DepartmentDTO department;
+    private DepartmentDTO department;
 
 
-    public EmployeeDto(String name, String surname, String occupation, Date date, DTO.DepartmentDTO department) {
+    public EmployeeDto(String name, String surname, String occupation, Date date, DepartmentDTO department) {
         this.name = name;
         this.surname = surname;
         this.occupation = occupation;

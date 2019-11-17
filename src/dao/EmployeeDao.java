@@ -8,6 +8,8 @@ public class EmployeeDao {
         System.out.println(" " + employee.getSurname() + " |");
         System.out.println(" " + employee.getOccupation() + " |");
         System.out.println(" " + employee.getDate() + " |");
-        System.out.println(" " + employee.getDepartment() + " |");
+        System.out.println(" " + employee.getDepartment().getShortName() + " |");
+        System.out.println(" " + employee.getDepartment().getFullName() + " |");
+
     }
 }
